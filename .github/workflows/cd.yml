@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - devel-text-only-first-draft
 
 permissions:
   contents: read
