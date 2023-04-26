@@ -19,13 +19,9 @@ jobs:
       - name: Build the LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          working_directory: 
+          working_directory: ${{ env. GITHUB_WORKSPACE	}}
           root_file: main.tex
 
-  upload:
-    runs-on: ubuntu-latest
-    needs: [produce-latex]
-    steps:
       - name: Upload PDF
         uses: actions/upload-artifact@v3
         with:
