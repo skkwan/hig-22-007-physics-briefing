@@ -25,5 +25,5 @@ jobs:
       - name: Upload PDF
         uses: actions/upload-artifact@v3
         with:
-          name: PDF
+          name: briefing.pdf
           path: main.pdf
