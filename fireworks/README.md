@@ -1,9 +1,10 @@
 # Fireworks event displays
 
+The Fireworks Twiki can be found at https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookFireworks 
 
 ## Event numbers and files
 
-2018 dataa events with high DNN scores:
+2018 data events with high DNN scores:
 1. run 315973, lumi 307, evt 376801960
     * `/store/data/Run2018A/SingleMuon/MINIAOD/17Sep2018-v2/00000/55A8BDC4-FC8D-AC41-BFBC-4C196D34F747.root` 
 2. run 316590, lumi 496, evt 673296798
@@ -19,3 +20,12 @@ which gives the results https://cmsweb.cern.ch/das/request?view=list&limit=50&in
 
 ## To use the config files
 
+1. On the cmsShowWeb Gateway @ CERN: https://fireworks.cern.ch/cmsShowWeb/revetor.pl,
+    - Paste the CERN EOS LFN (/store/...) into the first box
+    - And paste the raw GitHub configuration file into the second box
+2. In the GUI, you have to type in the run, lumi, and event number again (these are not stored in the config file).
+
+
+## To export a config file
+
+1. Exporting on the website sends the files to this URL for my account `https://fireworks.cern.ch/config/skkwan/`, where they can be right-clicked and downloaded.
