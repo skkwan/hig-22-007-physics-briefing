@@ -11,10 +11,11 @@
 % Useful packages
 \usepackage{amsmath}
 \usepackage{graphicx}
+\graphicspath{ {./figures/} }
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 \title{Combining two results for better sensitivity to new Higgs: HIG-22-007 Physics Briefing}
-\author{Stephanie Kwan (skwan@princeton.edu)}
+\author{Briefing prepared by Stephanie Kwan (skwan@princeton.edu)}
 
 \begin{document}
 \maketitle
@@ -63,7 +64,14 @@ This allows us to combine our results, improving the experiment's overall sensit
 
 If our measurements agree well with predictions of the Standard Model within uncertainties, we can ``rule out", or exclude, hypotheses of new physics. We do this by setting exclusion limits.
 
-The exclusion limits for one of the theory types studied (namely, 2HDM+S type 1) are summarized in the plot below, for each individual analysis and the two analyes combined: \begin{verbatim}https://pdas.web.cern.ch/pdas/HAA/llbb/full_run2_plot_BRaa_Type1.pdf\end{verbatim}
+The exclusion limits for one of the theory types studied (namely, 2HDM+S type 1) are summarized in the plot below, for each individual analysis and the two analyses combined: 
+
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=8cm]{full_run2_plot_BRaa_Type1.pdf}
+        \caption{Expected and observed limits for 2HDM+S Type I models, for h $\rightarrow aa \rightarrow 2b2\mu$ and h $\rightarrow aa \rightarrow 2b2\tau$ separately, then combined (h $\rightarrow bb \rightarrow \ell\ell$).}
+    \end{figure}
 
 The vertical axis is the probability that the 125 GeV Higgs particle decays into two intermediate "a" particles, termed the ``branching ratio'' (B). This cannot be greater than 100\% (the dashed horizontal line). 
 
@@ -85,4 +93,11 @@ Furthermore, combining two measurements provides stronger limits on new hypothes
 
 These latest results complement and strengthen efforts at the CMS experiment to use the 125 GeV Higgs boson as a probe for searching for signals of new physics. 
 
+
+
+\section{References and links}
+
+\begin{itemize}
+    \item Exclusion limit figure from \begin{verbatim}https://pdas.web.cern.ch/pdas/HAA/llbb/full_run2_plot_BRaa_Type1.pdf\end{verbatim}
+\end{itemize}
 \end{document}
