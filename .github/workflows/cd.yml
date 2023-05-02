@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - devel-text-only-first-draft
+      - devel-first-draft
 
 permissions:
   contents: read
