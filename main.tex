@@ -15,7 +15,7 @@
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 \title{Combining two results for better sensitivity to new Higgs: HIG-22-007 Physics Briefing}
-\author{Briefing prepared by: \\ Anagha Aravind (aaravind@wisc.edu) \\ Pallabi Das (pdas@princeton.edu) \\ Pieter Everaerts (pieter.everaerts@cern.ch) \\ Ho-Fung Tsoi (htsoi@wisc.edu) \\ Stephanie Kwan (skwan@princeton.edu)}
+\author{Briefing prepared by: \\ Anagha Aravind (aaravind@wisc.edu) \\ Pallabi Das (pdas@princeton.edu) \\ Pieter Everaerts (pieter.everaerts@cern.ch) \\ Elham Khazaie (elham.khazaie@cern.ch) \\ Stephanie Kwan (skwan@princeton.edu) \\ Ho-Fung Tsoi (htsoi@wisc.edu)}
 
 \begin{document}
 \maketitle
@@ -41,17 +41,15 @@ energies and kinematic properties similar to our signal, then we may have eviden
 
 \section{What did each analysis do, and how do we combine two analyses? (537 words)}
 
-One analysis group studied the case where one ``a" particle decays into two bottom quarks, and the other ``a" decays into two tau leptons, written h $\rightarrow aa \rightarrow 2b2\tau$.
-The second analysis group considered the case where one ``a" decays into two bottom quarks, and the other ``a" decays into two muons, i.e. h $\rightarrow aa \rightarrow 2b2\mu$. 
+One analysis group studied the case where one ``a" particle decays into two bottom quarks, and the other ``a" decays into two tau leptons, written h $\rightarrow aa \rightarrow 2\tau 2b$.
+The second analysis group considered the case where one ``a" decays into two bottom quarks, and the other ``a" decays into two muons, i.e. h $\rightarrow aa \rightarrow 2\mu 2b$. 
 
 
-The analyses differ in the muons and taus in their final states, and these particles are extremely different: muons are stable in the detector and are fairly well-reconstructed. 
-In comparison, the tau lepton is unstable and decays inside the detector. About 35\% of the time, a tau lepton decays into the lighter leptons (i.e. electrons and muons), and the remaining 65\% of the time, it decays into hadrons, 
-which further decay. These possibilities complicate tau reconstruction and distinguishing them from background noise. 
+These particles have very different signatures in the CMS detector. Muons are stable in the detector (i.e. they do not decay). On the other hand, tau leptons are unstable: about 35\% of the time, a tau will decay into electrons and muons, and the remaining 65\% of the time, it will decays into hadrons, 
+which further decay. These possibilities complicate tau reconstruction, and necessitate techniques to distinguish them from jets, which are showers of particles originating from quarks and gluons.
+* Bottom quarks decay into particles that tend to travel a small, but measurable distance before producing a jet. This so-called displaced vertex makes it possible to distinguish bottom quarks from other quarks.
 
-Bottom quarks are heavy enough to decay into jets (showers of particles in a cone), which are also challenging to reconstruct, and difficult to distinguish from low-energy interactions which we are not interested in.
-
-The figure below visualizes a real data event that contains two bottom-quark jets and two tau leptons close together in the detector, which is consistent with the h $\rightarrow aa \rightarrow 2b2\tau$ signature of interest.
+The figure below visualizes a real data event that contains two bottom-quark jets and two tau leptons close together in the detector, which is consistent with the h $\rightarrow aa \rightarrow 2\tau 2b$ signature of interest.
 
 \begin{figure}[ht]
     \centering
@@ -65,10 +63,11 @@ The figure below visualizes a real data event that contains two bottom-quark jet
 
 In order to optimize sensitivity to new physics, the two groups independently developed very different strategies.
 
-For instance, the h $\rightarrow aa \rightarrow 2b 2\tau$ group trained a machine learning algorithm to identify signal-like events and reject background events. When applied to real data, the algorithm assigns a score from 0 to 1, 
-based on how signal-like the data event is. We use this score to categorize real data based into signal regions (where we expect to see the most signal) and control regions (which we expect to see only background). 
+For instance, the h $\rightarrow aa \rightarrow 2\tau 2b$ group trained a machine learning algorithm to identify signal-like events and reject background events. The algorithm analyzes real data events and assigns a probability (from low probability to high probability) that a given data event is similar to the signal.
+We use this probability to separate our events into signal regions (where we expect to see the most signal) and control regions (which we expect to see only background). Our measurement is performed in the signal region, while we use the control regions to verify that we understand and correctly model
+our background events.
 
-In contrast, the h $\rightarrow aa \rightarrow 2b 2\mu$ group distinguished signal-like events from background events by defining a physical variable based on the masses of the two b quarks and two muons, which tends to be very small for signal-like events,
+In contrast, the h $\rightarrow aa \rightarrow 2\mu 2b$ group distinguished signal-like events from background events by defining a physical variable based on the masses of the two b quarks and two muons, which tends to be very small for signal-like events,
 and large for background events. The advantage of this approach is to utilize the excellent muon mass reconstruction provided by the CMS detector. 
 
 Despite these two different approaches, both analyses are looking for an excess of events as a function of the total mass of the pseudoscalars. 
@@ -85,7 +84,7 @@ The exclusion limits for one of the theory types studied (namely, 2HDM+S type 1)
     \begin{figure}[ht]
         \centering
         \includegraphics[width=8cm]{full_run2_plot_BRaa_Type1.pdf}
-        \caption{Expected and observed limits for 2HDM+S Type I models, for h $\rightarrow aa \rightarrow 2b2\mu$ and h $\rightarrow aa \rightarrow 2b2\tau$ separately, then combined (h $\rightarrow bb \rightarrow \ell\ell$).}
+        \caption{Expected and observed limits for 2HDM+S Type I models, for h $\rightarrow aa \rightarrow 2\mu 2b$ and h $\rightarrow aa \rightarrow 2\tau 2b$ separately, then combined (h $\rightarrow bb \rightarrow \ell\ell$).}
     \end{figure}
 
 The vertical axis is the probability that the 125 GeV Higgs particle decays into two ``a" particles, termed the ``branching ratio'' (B). This cannot be greater than 100\% (the dashed horizontal line). 
